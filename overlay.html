@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>osu! OSC Console</title>
+    </head>
+
+    <body>
+        <aside id="sidebar">
+            <h2>osu! OSC</h2>
+
+            <button class="nav-button active" data-page="console-page">
+                Konsole
+            </button>
+
+            <button class="nav-button" data-page="settings-page">
+                Settings
+            </button>
+
+            <button class="nav-button" data-page="setup-page">
+                Setup Strings
+            </button>
+        </aside>
+
+        <main id="app">
+            <section id="console-page" class="page active">
+                <h1>osu! Show Control Console</h1>
+                <div id="status">Verbinde mit ws://127.0.0.1:3001 ...</div>
+                <div id="log"></div>
+            </section>
+
+            <section id="settings-page" class="page">
+                <h1>Settings</h1>
+
+                <div class="settings-card">
+                    <label>
+                        OSC Ziel-IP
+                        <input type="text" value="127.0.0.1" />
+                    </label>
+
+                    <label>
+                        OSC Port
+                        <input type="number" value="9000" />
+                    </label>
+
+                    <label>
+                        WebSocket
+                        <input type="text" value="ws://127.0.0.1:3001" />
+                    </label>
+                </div>
+            </section>
+
+            <section id="setup-page" class="page">
+                <h1>Setup</h1>
+
+                <form id="event-setup-form" class="settings-card">
+                    <label>
+                        osu! Event
+                        <select id="osu-event-select" name="osuEvent">
+                            <option value="">Bitte Event auswählen</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        OSC-Adresse
+                        <input
+                            id="osc-address-input"
+                            name="oscAddress"
+                            type="text"
+                            placeholder="/osu/mode"
+                        />
+                    </label>
+
+                    <label>
+                        Ausgabe-Text / Template
+                        <input
+                            id="osc-text-input"
+                            name="oscText"
+                            type="text"
+                            placeholder="Modus: {value}"
+                        />
+                    </label>
+
+                    <button type="submit">Mapping speichern</button>
+                </form>
+
+                <h2>Aktuelle Mappings</h2>
+                <div id="mapping-list"></div>
+            </section>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>

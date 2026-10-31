@@ -1,0 +1,5 @@
+/target/
+/tosu/tosu-linux
+.env
+*.log
+.DS_Store
