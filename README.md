@@ -1,6 +1,7 @@
-=======
 # osu-show-control
+
 This project reads osu memory over tosu and enables shooting osc strings over UDP. 
+
 -------------------------
 ! This is not perfomance and compatibility checked !
 -------------------------
@@ -11,13 +12,13 @@ How to use:
 3. start the rust bin with cargo
 4. open overlay.html
 
-How it works:
-tosu WebSocket
-        ↓
-show_interface.rs reads raw osu data
-        ↓
-show_logic.rs decides what to send
-        ↓
+How it works: </br>
+tosu WebSocket </br>
+        ↓ </br>
+show_interface.rs reads raw osu data </br>
+        ↓ </br>
+show_logic.rs decides what to send </br>
+        ↓ </br> 
 show_interface.rs shoots osc on your required address
 
 This project was meant for Show Control at events. 
