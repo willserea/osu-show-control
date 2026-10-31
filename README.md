@@ -1,3 +1,5 @@
+=======
+# osu-show-control
 This project reads osu memory over tosu and enables shooting osc strings over UDP. 
 -------------------------
 ! This is not perfomance and compatibility checked !
@@ -24,3 +26,5 @@ I guess this can be used for many use cases, that don't want to go an online rou
 Next steps I had in mind are implementing an html server locally for communication with different show software or especially obs.
 
 I'm will be working on this if I have time at the end of the year.
+
+This project reads osu memory over tosu and enables shooting osc strings over UDP.
